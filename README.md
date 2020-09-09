@@ -22,7 +22,7 @@ This is problematic because arrays may be written to as well as read from. If on
 B[] b = new B[1];
 A[] a = b;
 ```
-one may then ***destroy assumptions*** about what properties elements of `b` may have if elements of `a` are re-assigned:
+it ***destroys assumptions*** about what properties elements of `b` may have if elements of `a` are re-assigned:
 ```
 a[0] = new A();
 ```
